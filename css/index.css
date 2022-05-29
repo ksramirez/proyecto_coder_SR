@@ -1,0 +1,403 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Khula:wght@400;600&family=Montserrat:wght@100;500;600&display=swap');
+
+
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body  {       
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background-color: #C4C4C4;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-position: center;
+    width: 100%;
+    font-family: 'khula';
+}
+/*MAIN*/
+main {
+    margin: 0 auto;
+    max-width: 1200px;
+
+}/*ESTILOS HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(255, 255, 255, 0.355);
+    padding: 2rem;
+}
+header picture {
+    flex-basis: 40%;
+}
+header picture img{
+    max-width: 200px;
+}
+
+nav ul {
+    flex-basis: 60%;
+    display: flex;
+    gap: 2rem;
+    list-style-type: none;
+}
+nav ul a {
+    font-size: 1.8em;
+    color: rgb(47, 49, 51);
+}
+
+
+/* index*/
+
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.presentacion__logoRedondo {    
+   width: 20rem; 
+   margin-top: 2rem;
+
+}    
+    
+.presentacion__titulo {
+    font-style: normal;
+    font-size: 5em;
+    color: #808285;
+    text-align: right;    
+    padding-top: 3rem;
+    padding-right: 20px;
+    font-family: 'Montserrat';
+    padding-bottom: 6rem;
+
+}
+p {
+    padding: 2rem;
+    font-size: 3em;
+    text-align: center;
+    color: rgb(113, 113, 113); 
+    padding-bottom: 10rem;
+
+}
+.img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #474747;
+    padding: 1rem;
+
+}
+.img .img__circulo {
+    width: 12%;
+    border-radius: 50%;
+    border: #808285 8px solid;
+}
+.bio {
+    display: flex;
+    flex-direction:row;
+    justify-items: center;
+    padding: 2rem;    
+}
+.bio img {    
+    width: 40%;
+    border-radius: 50%;
+    border: #474747 9px solid;
+}
+.bio__info h2 {
+    text-align: center;
+
+}
+
+
+
+/*ESTILOS FOOTHER*/
+
+.footer {    
+    display: flex;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.355);
+    background-size: cover;width: 100%;
+    position: relative;
+    padding: 1rem;
+     
+}
+.footer .footer__iconos {
+    height: 4rem;
+    width: 4rem;
+    background-position: center;
+    margin-left: 2rem;
+    padding-left:9rem;
+}
+
+
+/*NOSOTROS*/
+.grid-main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr;
+    column-gap: 10px;
+}
+.grid-item {
+    padding: 10px;
+    justify-content: center;
+
+}
+h2 {
+    font-style: normal;
+    font-size: 60px;
+    color: rgb(255, 255, 255);
+    text-align: right;    
+    padding-top: 30px;
+    padding-right: 20px;
+    font-family: sans-serif;
+}
+.iframe {
+    width: 600px;
+    object-position: left;
+    margin-left: 10px;
+    justify-content: left;
+}
+
+/*CONTACTO*/
+.fondo-contacto {
+    background-image: url(../img/fondo-contacto.jpg);
+}
+.contenedor {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 1000px;
+    background-color: #f9f9f9bb;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.contacto__titulo {
+     font-style: normal;
+     color: #EFEAE0;
+     text-shadow: black;
+     font-size: 40px;
+     text-align: center;
+     padding-top: 0%;
+}
+.contacto__p {
+    font-size: 20px;
+    color: #EFEAE0;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction:column;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.451);
+    padding: 50px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+ input{
+     width: 100%;
+     margin-bottom: 20px;
+     padding: 7px;
+     box-sizing: border-box;
+     font-size: 18px;
+     border: none;
+ }
+ .input-mensaje {
+     height: 100px;
+ }
+ #buttonContacto {
+     background:#808285 ;
+     color: #EFEAE0;
+     padding: 20px;
+     font-size: 20px;
+     border-radius: 20px;
+     margin-top: 60px;
+    
+ }
+ #buttonContacto:hover {
+     cursor: pointer;
+ }
+
+ /*POR QUE ELEGIRNOS*/
+.item {
+    background-image: url(../img/fondo-porQueElegirnos.jpg);
+}
+.item .item__titulo {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 5px;
+}
+.item .item__descripcion {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 400px;
+    padding-right: 400px;
+    color: #EFEAE0;  
+    padding-bottom: 50px;
+}
+.item .item__imagen {
+    width: 100px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 30px;
+   margin-bottom: 10px;
+}
+/* NUESTROS PRODUCTOS*/
+
+.card {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.box__imagen {
+    display: flex;
+    border: 4px #EFEAE0 solid;
+    width:300px;
+    border-radius: 500%;
+    box-shadow: 4px 4px 5px gray;
+}
+
+.box__boton {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    background: #808285;
+    color: #EFEAE0;
+    font-size: 20px;
+    border-radius: 10px;
+    text-align: center;
+    
+}
+.box__boton:hover {
+    cursor: pointer;
+}
+
+/* responsive*/
+
+
+@media (max-width:768px) {
+    header picture {
+        display: none;
+    }
+    nav ul a {
+        font-size: 1em;
+        font-style: italic ;
+        color: rgb(47, 49, 51);
+    }
+    .presentacion__titulo {
+        text-align: center;
+    }
+    .footer .footer__iconos {
+        height: 3rem;
+        width: 3rem;
+        background-position: center;
+
+        padding:2rem;
+    }
+    .grid-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;       
+    }
+    .box__imagen {
+        width: 40%;
+    }
+    .item .item__descripcion {
+        font-size: 1.6em;
+        text-align: center;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+    }
+    .item .item__titulo {
+        font-size: 2.2em;
+    }
+
+    .contacto__titulo {
+        font-size: 2.5em;
+   }
+   .contacto__p {
+       font-size: 1.6em;
+   }
+   
+   form {
+       width: 300px;
+       border-radius: 7px;
+   }
+    
+
+
+}
+    
+@media screen and (max-width: 480px) {
+
+    .img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    
+    }
+    .img .img__circulo {
+        width: 30%;
+        border-radius: 50%;
+        border: #808285 8px solid;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+        margin-top: 4rem;
+    }
+    .bio img {    
+        width: 30%;
+        border-radius: 50%;
+        border: #474747 9px solid;
+    }
+    .bio__info h2 {
+        font-size:  3em; 
+    
+    }
+    .bio p {
+        font-size: 1.8em;
+    }
+
+}
+
+
+/*nuestros aromas*/
+    
