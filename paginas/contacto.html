@@ -23,7 +23,7 @@
                     <a href="../index.html">HOME</a>
                 </li>
                 <li>
-                    <a href="../paginas/nosotros.html" >NOSOTROS</a>
+                    <a href="../paginas/" >NUESTROS AROMAS</a>
                 </li>
                 <li>
                     <a href="../paginas/nuestrosproductos.html" >NUESTROS PRODUCTOS</a>
@@ -42,28 +42,26 @@
     <main class="container">
 
         <section class="contenedor">
-                   
-            <div>
-                <form action="./index.js" method="post">
+                           
+            <form action="./index.js" method="post">
 
-                    <section class="contacto">
-                        <h2 class="contacto__titulo">Contactate con nosotros</h2>
-                         <p class="contacto__p">Envianos un mensaje y nos contactaremos a la brevedad</p>
-                    </section>
-
+                <div class="contacto">
+                    <h2 class="contacto__titulo">Contactate con nosotros</h2>
+                    <p class="contacto__p">Envianos un mensaje y nos contactaremos a la brevedad</p>
+                </div>
+                <div class="d-grid gap-3">             
        
-                    <input type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    <input class="p-2 bg-light border" type="text" name="nombre" placeholder="Nombre y apellido" required>
 
-                    <input type="text" name="telefono" placeholder="Telefono">
+                    <input class="p-2 bg-light border" type="text" name="telefono" placeholder="Telefono">
 
-                    <input type="email" name="email" placeholder="Email" required>
+                    <input class="p-2 bg-light border" type="email" name="email" placeholder="Email" required>
 
-                    <input class="input-mensaje" type="text" name="mensaje" placeholder="Escriba aqui su mensaje." required>
+                    <input class="p-2 bg-light border"  class="input-mensaje" type="text" name="mensaje" placeholder="Escriba aqui su mensaje." required>
        
                     <input type="button" value="Enviar" id="buttonContacto">
-
-                </form>
-            </div>                
+                </div>
+                </form>            
         </section>
     </main>
 
