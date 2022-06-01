@@ -7,6 +7,8 @@
     <link rel="shortcut icon" href="./img/iconmaw.png" type="image/x-icon">
     <title>Home</title>
     <link rel="stylesheet" href="./css/index.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
 <body class="fondo-index"> 
@@ -17,24 +19,32 @@
              <a href="index.html"> <img src="./img/MaW transparente1.png" alt="logo rectangulo"></a>
          </picture>
                  
-        <nav >         
-             <ul>
-                <li>
-                    <a href="./index.html">HOME</a>
-                </li>
-                <li>
-                    <a href="./paginas/nosotros.html" >NOSOTROS</a>
-                </li>
-                <li>
-                    <a href="./paginas/nuestrosproductos.html" >NUESTROS PRODUCTOS</a>
-                </li>
-                <li>
-                    <a href="./paginas/porqueelegirnos.html" >POR QUÉ ELEGIRNOS</a>
-                </li>
-                <li>
-                    <a href="./paginas/contacto.html" >CONTACTO</a>
-                </li>                
-            </ul>  
+        <nav class="navbar navbar-expand-sm bg-light"> 
+            <section class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+             
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./paginas/nosotros.html" >NOSOTROS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./paginas/nuestrosproductos.html" >NUESTROS PRODUCTOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./paginas/porqueelegirnos.html" >POR QUÉ ELEGIRNOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./paginas/contacto.html" >CONTACTO</a>
+                    </li>                
+                </ul>   
+                </div>       
+            </section> 
         </nav>
          
     </header>
@@ -42,7 +52,7 @@
     
     <!--FIN DE HEADER DE LA PAGINA-->
 
-    <main>
+    <main class="container">
         <section class="presentacion">
                    
           <img class="presentacion__logoRedondo" src="./img/MaW transparente2 BLANCO.png" alt="logo">            
@@ -56,11 +66,14 @@
             <img class="img__circulo" src="./img/vela2.jpg" alt="vela2">
             <img class="img__circulo" src="./img/vela3.jpg" alt="vela3">
         </section>
-        <section class="bio">
-           
-                <img src="./img/yo.jpg" alt="">  
-                <div class="bio__info">
-                <h2> Esta soy yo</h2>   
+
+        <section class="row p-4 justify-content-between ">
+                <picture class="col-md-6 col-lg-4 ">
+                    <img src="./img/yo.jpg" alt="">
+                </picture>     
+                  
+                <div class="col-md-6 col-lg-4 ">
+                <h2 class="text-center" > Esta soy yo</h2>   
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nulla animi ea rerum praesentium vero, dolore aperiam! Dolores quisquam alias nam, a mollitia, nihil aliquid tempore, quos consequuntur dignissimos repellendus?</p>           
                 </div>
 
@@ -78,6 +91,9 @@
    
     </footer>
     <!--FIN DE FOOTER DE LA PAGINA-->
-    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+
 </body>
 </html>

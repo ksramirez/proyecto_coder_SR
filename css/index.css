@@ -24,7 +24,7 @@ body  {
     font-family: 'khula';
 }
 /*MAIN*/
-main {
+/*main {
     margin: 0 auto;
     max-width: 1200px;
 
@@ -119,20 +119,11 @@ p {
     border-radius: 50%;
     border: #808285 8px solid;
 }
-.bio {
-    display: flex;
-    flex-direction:row;
-    justify-items: center;
-    padding: 2rem;    
-}
-.bio img {    
-    width: 40%;
-    border-radius: 50%;
-    border: #474747 9px solid;
-}
-.bio__info h2 {
-    text-align: center;
 
+
+#bio  {    
+         border-radius: 50%;
+    border: #474747 9px solid;
 }
 
 
@@ -290,17 +281,16 @@ form {
 }
 /* NUESTROS PRODUCTOS*/
 
-.card {
+#card {
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
-    gap: 4rem;
-    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 2rem;
 }
 
 .box {
-    display: flex;
-    flex-direction: column;
+
     align-items: center;
     gap: 4rem;
     transition: all .2s linear;
