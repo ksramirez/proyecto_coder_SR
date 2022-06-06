@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/iconmaw.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Home</title>
     <link rel="stylesheet" href="./css/index.css">
     <!-- CSS only -->
@@ -14,32 +16,32 @@
 <body class="fondo-index"> 
     <!--HEADER DE LA PAGINA-->
 
-     <header>
+     <header class="animate__animated animate__fadeInDown">
          <picture>
-             <a href="index.html"> <img src="./img/MaW transparente1.png" alt="logo rectangulo"></a>
+             <a href="index.html"> <img src="./img/logo-rectangulo.png" alt="logo rectangulo"></a>
          </picture>
                  
-        <nav class="navbar navbar-expand-sm bg-light"> 
-            <section class="container-fluid">
+        <nav class="navbar navbar-expand-md"> 
+            <section class="container-fluid justify-content-center">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
              
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
+                    <li class="nav-item mx-auto text-white">
                         <a href="./index.html">HOME</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item mx-auto">
                         <a href="./paginas/nuestrosaromas.html" >NUESTROS AROMAS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item  mx-auto">
                         <a href="./paginas/nuestrosproductos.html" >NUESTROS PRODUCTOS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item  mx-auto">
                         <a href="./paginas/porqueelegirnos.html" >POR QUÉ ELEGIRNOS</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item  mx-auto">
                         <a href="./paginas/contacto.html" >CONTACTO</a>
                     </li>                
                 </ul>   
@@ -48,17 +50,16 @@
         </nav>
          
     </header>
-
     
     <!--FIN DE HEADER DE LA PAGINA-->
 
     <main class="container">
         <section class="presentacion">
                    
-          <img class="presentacion__logoRedondo" src="./img/MaW transparente2 BLANCO.png" alt="logo">            
+          <img class="presentacion__logoRedondo" src="./img/logocirculoblanco.png" alt="logo">            
 
              <h2 class="presentacion__titulo">Explota tu creatividad</h2>
-            <p>Velas aromáticas hechas a base de 
+            <p id="bio_info">Velas aromáticas hechas a base de 
             <br>cera de soja y mucho amor.</br></p>
         </section>
         <section class="img">        
@@ -67,33 +68,31 @@
             <img class="img__circulo" src="./img/vela3.jpg" alt="vela3">
         </section>
 
-        <section class="row p-4 justify-content-between ">
-                <picture class="col-md-6 col-lg-4 ">
-                    <img src="./img/yo.jpg" alt="">
+        <section class="row p-5 justify-content-between ">
+                <picture class="col-md-6 pb-2">
+                    <img src="./img/yo.jpg" class="img-fluid rounded-circle" alt="presentacion">
                 </picture>     
                   
-                <div class="col-md-6 col-lg-4 ">
+                <div class="col-md-6 col-lg-6">
                 <h2 class="text-center" > Esta soy yo</h2>   
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita nulla animi ea rerum praesentium vero, dolore aperiam! Dolores quisquam alias nam, a mollitia, nihil aliquid tempore, quos consequuntur dignissimos repellendus?</p>           
                 </div>
-
         </section>
-
     </main>
 
     <!--FOOTER-->
-    <footer >
+    <footer>
         <section class="footer">                  
             <a href="https://facebook.com"><img class="footer__iconos" src="./img/facebookLogo.webp" alt="facebook logo"></a>                
             <a  href="https://instagram.com"><img class="footer__iconos" src="./img/instagramLogo.webp" alt="instagram logo"></a>                
             <a  href="https://googlemaps.com"><img class="footer__iconos" src="./img/googleMaps.webp" alt="google maps logo"></a>                            
-        </section>
-   
-    </footer>
+        </section>   
+    </footer>      
     <!--FIN DE FOOTER DE LA PAGINA-->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-
 
 </body>
 </html>
