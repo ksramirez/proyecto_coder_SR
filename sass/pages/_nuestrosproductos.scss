@@ -1,0 +1,41 @@
+#card {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 2rem;
+}
+
+.box {
+
+    align-items: center;
+    gap: 4rem;
+    transition: all .2s linear;
+
+    &__imagen {
+        display: flex;
+        border: 4px #EFEAE0 solid;
+        width:300px;
+        border-radius: 500%;
+        box-shadow: 4px 4px 5px gray;
+    }
+
+    &__boton {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+        background: #808285;
+        color: #EFEAE0;
+        font-size: 20px;
+        border-radius: 10px;
+        text-align: center;    
+    }
+}
+.box:hover{
+    transform: scale(1.1, 1.1);
+
+}
+
+.box__boton:hover {
+    cursor: pointer;
+}

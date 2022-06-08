@@ -1,0 +1,30 @@
+.item {
+    background-image: url(../img/fondo-porQueElegirnos.jpg);
+
+    &__titulo {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    &__descripcion {
+        font-size: 25px;
+        text-align: center;
+        padding-left: 400px;
+        padding-right: 400px;
+        color: #5a5a5a;  
+        padding-bottom: 50px;
+        font-family:'Bebas',sans-serif ;
+        font-style: italic;
+    }
+
+    &__imagen {
+       width: 600px;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 30px;
+       margin-bottom: 20px;
+       border-radius: 6px;
+    }
+}

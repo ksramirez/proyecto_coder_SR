@@ -1,0 +1,31 @@
+.footer {    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-image: linear-gradient(
+        160deg,
+        #474747 0%,
+        #5c5c5c 11%,
+        #707070 24%,
+        #858585 37%,
+        #9c9c9c 51%,
+        #b0b0b0 63%,
+        #b8b8b8 73%,
+        #bfbfbf 82%,
+        #c7c7c7 89%,
+        #cfcfcf 95%,
+        #d6d6d6 100%
+      );
+    background-size: cover;width: 100%;
+    position: relative;
+    padding: 1rem;  
+    justify-content: space-evenly;  
+    
+    &__iconos{
+        height: 4rem;
+        background-position: center;
+        margin-left: 2rem;
+        padding-left:9rem;
+    }
+}
+
