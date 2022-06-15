@@ -1,9 +1,12 @@
 /*Externos*/
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Khula:wght@400;600&family=Montserrat:wght@100;500;600&display=swap');
+
 /*Misc*/
 @import './misc/variables';
+@import './misc/mixins';
 @import './misc/normalize';
 @import './misc/media';
+
 /*Partials*/
 @import './partials/header';
 @import './partials/footer';

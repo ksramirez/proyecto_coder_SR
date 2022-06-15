@@ -16,7 +16,7 @@
     &__titulo {
         font-style: normal;
         font-size: 6em;
-        color: #575757;
+        color: map-get($colors, primery);
         text-align: right;    
         padding-top: 3rem;
         padding-right: 20px;
@@ -37,12 +37,16 @@ p {
     padding: 2rem;
     font-size: 3.5em;
     text-align: center;
-    color: #ffffff; 
+    color: map-get($colors, base); 
     padding-bottom: 10rem;
 }
+
 .text-center{
     font-size: 4rem;
     font-family: 'Bebas',sans-serif;
+    &--active{
+        @extend .item__titulo
+    }
 }
 .img {
     display: flex;

@@ -14,13 +14,12 @@
 
 .contacto__titulo {
      font-style: normal;
-     color: #EFEAE0;
-     text-shadow: black;
+     color: map-get($colors, text-color);
      font-size: 40px;
      text-align: center;
      &__p {
         font-size: 20px;
-        color: #EFEAE0;
+        color: map-get($colors, text-color);
         text-align: center;
         margin-bottom: 20px;
         padding-bottom: 50px;
@@ -29,7 +28,7 @@
 }
 .contacto__p {
     font-size: 20px;
-    color: #EFEAE0;
+    color: map-get($colors, text-color);
     text-align: center;
     margin-bottom: 20px;
     padding-bottom: 50px;
@@ -50,15 +49,15 @@ form {
      margin-bottom: 20px;
      padding: 7px;
      box-sizing: border-box;
-     font-size: 18px;
+     font-size: 20px;
      border: none;
  }
  .input-mensaje {
      height: 100px;
  }
  #buttonContacto {
-     background:#808285 ;
-     color: #EFEAE0;
+     background:map-get($colors, alternative) ;
+     color:map-get($colors, primary);
      padding: 20px;
      font-size: 20px;
      border-radius: 20px;

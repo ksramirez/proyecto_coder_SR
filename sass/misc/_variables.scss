@@ -1,0 +1,13 @@
+/*Colors*/
+$colors: (
+    primary:#808285,
+    secondary:#EFEAE0,
+    alternative:#F1BDA7,
+    text-color: #F8EFEA,
+    base:#ffff
+);
+@each $color, $value in$colors {
+    #{$color} {
+        color: #{$value}
+    }    
+}

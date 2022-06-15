@@ -1,19 +1,21 @@
-#card {
-    margin-top: 2rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    gap: 2rem;
+.fondo-productos{
+    background-image: url(../img/fondo-conocenos.jpg);
 }
 
-.box {
+#cards {
+    margin-top: 2rem;
+    @include flex (row,flex-start,flex-start, 2rem);   
+    flex-wrap: nowrap;
+  }
 
+.box {
     align-items: center;
     gap: 4rem;
     transition: all .2s linear;
 
     &__imagen {
         display: flex;
+        margin:auto;
         border: 4px #EFEAE0 solid;
         width:300px;
         border-radius: 500%;
@@ -25,10 +27,11 @@
         justify-content: center;
         width: 200px;
         background: #808285;
-        color: #EFEAE0;
+        color:map-get($colors, base);
         font-size: 20px;
         border-radius: 10px;
         text-align: center;    
+        box-shadow: 4px 4px 4px white;
     }
 }
 .box:hover{

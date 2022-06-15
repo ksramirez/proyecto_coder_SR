@@ -1,6 +1,22 @@
 /*Externos*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Khula:wght@400;600&family=Montserrat:wght@100;500;600&display=swap");
 /*Misc*/
+/*Colors*/
+primary {
+  color: #808285; }
+
+secondary {
+  color: #EFEAE0; }
+
+alternative {
+  color: #F1BDA7; }
+
+text-color {
+  color: #F8EFEA; }
+
+base {
+  color: #ffff; }
+
 * {
   margin: 0;
   padding: 0; }
@@ -46,7 +62,7 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 10px; }
-  .item .item__titulo {
+  .item .item__titulo, .item .text-center--active {
     font-size: 2.2em; }
   .contacto__titulo {
     font-size: 2.5em; }
@@ -130,7 +146,6 @@ nav ul li a:hover {
   .presentacion__titulo {
     font-style: normal;
     font-size: 6em;
-    color: #575757;
     text-align: right;
     padding-top: 3rem;
     padding-right: 20px;
@@ -148,7 +163,7 @@ p {
   padding: 2rem;
   font-size: 3.5em;
   text-align: center;
-  color: #ffffff;
+  color: #ffff;
   padding-bottom: 10rem; }
 
 .text-center {
@@ -169,12 +184,17 @@ p {
 .fondo_aromas {
   background-image: url(../img/fondo-conocenos.jpg); }
 
-#card {
+.fondo-productos {
+  background-image: url(../img/fondo-conocenos.jpg); }
+
+#cards {
   margin-top: 2rem;
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 2rem; }
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap; }
 
 .box {
   align-items: center;
@@ -182,6 +202,7 @@ p {
   transition: all .2s linear; }
   .box__imagen {
     display: flex;
+    margin: auto;
     border: 4px #EFEAE0 solid;
     width: 300px;
     border-radius: 500%;
@@ -191,10 +212,11 @@ p {
     justify-content: center;
     width: 200px;
     background: #808285;
-    color: #EFEAE0;
+    color: #ffff;
     font-size: 20px;
     border-radius: 10px;
-    text-align: center; }
+    text-align: center;
+    box-shadow: 4px 4px 4px white; }
 
 .box:hover {
   transform: scale(1.1, 1.1); }
@@ -204,16 +226,19 @@ p {
 
 .item {
   background-image: url(../img/fondo-porQueElegirnos.jpg); }
-  .item__titulo {
+  .item__titulo, .text-center--active {
     font-size: 40px;
     text-align: center;
-    margin-top: 5px; }
+    margin-top: 5px;
+    color: #b77222;
+    font-family: 'Bebas', sans-serif;
+    text-shadow: 3px 3px 3px white; }
   .item__descripcion {
     font-size: 25px;
     text-align: center;
     padding-left: 400px;
     padding-right: 400px;
-    color: #5a5a5a;
+    color: #ffffff;
     padding-bottom: 50px;
     font-family: 'Bebas',sans-serif;
     font-style: italic; }
@@ -241,20 +266,19 @@ p {
 
 .contacto__titulo {
   font-style: normal;
-  color: #EFEAE0;
-  text-shadow: black;
+  color: #F8EFEA;
   font-size: 40px;
   text-align: center; }
   .contacto__titulo__p {
     font-size: 20px;
-    color: #EFEAE0;
+    color: #F8EFEA;
     text-align: center;
     margin-bottom: 20px;
     padding-bottom: 50px; }
 
 .contacto__p {
   font-size: 20px;
-  color: #EFEAE0;
+  color: #F8EFEA;
   text-align: center;
   margin-bottom: 20px;
   padding-bottom: 50px; }
@@ -274,15 +298,15 @@ input {
   margin-bottom: 20px;
   padding: 7px;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 20px;
   border: none; }
 
 .input-mensaje {
   height: 100px; }
 
 #buttonContacto {
-  background: #808285;
-  color: #EFEAE0;
+  background: #F1BDA7;
+  color: #808285;
   padding: 20px;
   font-size: 20px;
   border-radius: 20px;
