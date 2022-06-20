@@ -13,7 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 </head>
-<body class="item">
+<body class="fondo-eleginos">
     <!--HEADER DE LA PAGINA-->
     <header class="animate__animated animate__fadeInDown">
       <picture>
@@ -51,23 +51,29 @@
  </header>
      <!--FIN DE HEADER DE LA PAGINA-->
 
-     <main class="container">
+     <main class="container">  
           <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="500">
-                <img src="../img/Group 1.jpg" class="item__imagen" alt="crueltyfree">
-                <h3 class="item__titulo">CRUELTY FREE<h3>
-                <p class="item__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae aut vitae assumenda ad porro ducimus error quo, ullam dignissimos quam similique rerum recusandae aliquid nulla sapiente minima aliquam vel!</p>
-              </div>
-              <div class="carousel-item" data-bs-interval="500">
-                <img src="../img/Group 2.jpg" class="item__imagen" alt="organic">
-                <h3 class="item__titulo">PRODUCTOS ORGÁNICOS<h3>
-                <p class="item__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae aut vitae assumenda ad porro ducimus error quo, ullam dignissimos quam similique rerum recusandae aliquid nulla sapiente minima aliquam vel!</p>
+              <div class="tag carousel-item active" >
+                <img src="../img/Group 1.jpg" class="tag__imagen" alt="crueltyfree">
+                <div class="descripcion">
+                  <h3 class="descripcion__titulo">CRUELTY FREE<h3>
+                  <p class="descripcion__text">Ninguno de los productos o ingredientes de Aromas de Make a Wish han sido probados previamente a su comercialización ni a posterior en animales.</p>
                 </div>
-              <div class="carousel-item">
-                <img src="../img/Group 3.jpg" class="item__imagen" alt="recicle">
-                <h3 class="item__titulo">ENVASES RECICLABLES<h3>
-                <p class="item__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque beatae aut vitae assumenda ad porro ducimus error quo, ullam dignissimos quam similique rerum recusandae aliquid nulla sapiente minima aliquam vel!</p>
+              </div>
+              <div class=" tag carousel-item" >
+                <img src="../img/Group 2.jpg" class="tag__imagen" alt="organic">
+                <div class="descripcion">
+                  <h3 class="descripcion__titulo">PRODUCTOS ORGÁNICOS<h3>
+                  <p class="descripcion__text">Nuestros productos están elaborados con fragancias 0% alcohol. La fabricación de difusores en varillas sin incluir el alcohol favorece su duración y su calidad creando así aromas que no empalagan ni agobian, sino que mantiene una difusión constante.</p>
+               </div> 
+              </div>
+              <div class=" tag carousel-item">
+                <img src="../img/Group 3.jpg" class="tag__imagen" alt="recicle">
+                <div class="descripcion">                 
+                  <h3 class="descripcion__titulo">ENVASES RECICLABLES<h3>
+                  <p class="descripcion__text">El envase de nuestros productos es de cristal. Su resistencia y fino diseño lo hacen óptimo para su reutilización. Una vez que se consume la vela, el envase puede llevar a Refill dándole así una nueva vida útil.</p>
+                </div>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
@@ -78,7 +84,7 @@
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-          </div>
+        </div>    
      </main>
 
     <!--FOOTER-->

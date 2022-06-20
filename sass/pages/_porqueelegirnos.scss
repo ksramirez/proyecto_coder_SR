@@ -1,33 +1,40 @@
-.item {
+.fondo-eleginos {
     background-image: url(../img/fondo-porQueElegirnos.jpg);
+}
 
-    &__titulo {
-        font-size: 40px;
-        text-align: center;
-        margin-top: 5px;
-        color:map-get($colors,primary );
-        font-family: 'Bebas', sans-serif;
-        text-shadow: 3px 3px 3px white ;
-    }
 
-    &__descripcion {
-        font-size: 25px;
-        text-align: center;
-        padding-left: 100px;
-        padding-right: 100px;
-        color: map-get($colors,secondary );  
-        padding-bottom: 50px;
-        font-family:'Bebas',sans-serif ;
-        font-style: italic;
-    }
-
+.tag{
     &__imagen {
-       width: 600px;
+       width: 70%;
        display: block;
        margin-left: auto;
        margin-right: auto;
        margin-top: 30px;
        margin-bottom: 20px;
        border-radius: 6px;
+       box-shadow: 4px 4px 6px white;
     }
 }
+    .descripcion{
+        &__titulo {
+            font-size: 40px;
+            text-align: center;
+            margin-top: 5px;
+            color:black;
+            font-family: 'Bebas', sans-serif;
+            text-shadow: 2px 2px 5px white ;
+        }
+    
+        &__text {
+            padding-left:200px;
+            padding-right: 200px;       
+            font-size: 25px;
+            text-align: center; 
+            color: map-get($colors,secondary );  
+            padding-bottom: 50px;
+            padding-top: 20px;
+            font-family:'Bebas',sans-serif ;
+            font-style: italic;
+        }
+    }
+

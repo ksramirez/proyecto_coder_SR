@@ -35,9 +35,6 @@ body {
   font-family: 'Khula',sans-serif; }
 
 /*Mobile Small*/
-@media screen and (max-width: 480px) {
-  /*Home*/ }
-
 /*Mobile Large*/
 @media screen and (max-width: 480px) {
   .img {
@@ -48,10 +45,14 @@ body {
   .img .img__circulo {
     width: 30%;
     border-radius: 50%;
-    border: #808285 8px solid; } }
+    border: #808285 8px solid; }
+  .descripcion .descripcion__text {
+    font-size: 14px;
+    padding-left: 50px;
+    padding-bottom: 50px; } }
 
 /*Mobile Tablet*/
-@media (max-width: 760px) {
+@media (max-width: 768px) {
   header picture {
     display: none; }
   nav ul a {
@@ -86,7 +87,21 @@ body {
     font-size: 1.6em; }
   form {
     width: 300px;
-    border-radius: 7px; } }
+    border-radius: 7px; }
+  .tag .tag__imagen {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 6px; }
+  .descripcion .descripcion__text {
+    font-size: 14px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    text-align: center; } }
 
 /*Partials*/
 header {
@@ -97,7 +112,7 @@ header {
   padding: 2rem; }
 
 header picture {
-  flex-basis: 40%; }
+  flex-basis: 30%; }
 
 header picture img {
   max-width: 200px; }
@@ -111,7 +126,7 @@ nav ul li {
 
 nav ul a {
   display: flex;
-  font-size: 1.4em;
+  font-size: 1.6em;
   color: #f2f2f2;
   text-decoration: none;
   border-bottom: #EFEAE0 2px solid; }
@@ -165,13 +180,6 @@ nav ul li a:hover {
     padding-bottom: 10rem;
     text-shadow: 2px 2px #d1d1d1; }
 
-p {
-  padding: 2rem;
-  font-size: 3.5em;
-  text-align: center;
-  color: #ffff;
-  padding-bottom: 10rem; }
-
 .img {
   display: flex;
   flex-direction: row;
@@ -197,10 +205,10 @@ p {
 .nosotros__text {
   margin: 10px;
   padding: 10px;
-  font-family: 'Bebas', sans-serif;
   color: #ffff;
   font-size: 2rem;
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  text-align: justify; }
 
 .fondo-aromas {
   background-image: url(../img/fondo-conocenos.jpg); }
@@ -210,10 +218,11 @@ p {
   background-attachment: fixed; }
 
 .card {
+  background-image: url(../img/fondo-conocenos.jpg);
   box-shadow: 0 5px 10px #000;
   border-radius: 5px; }
   .card__body {
-    background-image: url(../img/fondo-conocenos.jpg); }
+    border-radius: 5px; }
   .card__flip > div {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
@@ -272,7 +281,7 @@ p {
 .cards {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  max-width: 200px;
+  max-width: 300px;
   margin: 20px;
   background-color: white;
   text-align: center;
@@ -280,7 +289,7 @@ p {
   padding: 1px;
   transition: transform .2s; }
   .cards__img {
-    width: 200px;
+    width: 300px;
     border-radius: 10px; }
   .cards__title {
     margin: 10px;
@@ -308,32 +317,37 @@ p {
 button:hover {
   opacity: 0.7; }
 
-.item {
+.fondo-eleginos {
   background-image: url(../img/fondo-porQueElegirnos.jpg); }
-  .item__titulo {
-    font-size: 40px;
-    text-align: center;
-    margin-top: 5px;
-    color: #717375;
-    font-family: 'Bebas', sans-serif;
-    text-shadow: 3px 3px 3px white; }
-  .item__descripcion {
-    font-size: 25px;
-    text-align: center;
-    padding-left: 100px;
-    padding-right: 100px;
-    color: #EFEAE0;
-    padding-bottom: 50px;
-    font-family: 'Bebas',sans-serif;
-    font-style: italic; }
-  .item__imagen {
-    width: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-radius: 6px; }
+
+.tag__imagen {
+  width: 70%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 4px 4px 6px white; }
+
+.descripcion__titulo {
+  font-size: 40px;
+  text-align: center;
+  margin-top: 5px;
+  color: black;
+  font-family: 'Bebas', sans-serif;
+  text-shadow: 2px 2px 5px white; }
+
+.descripcion__text {
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 25px;
+  text-align: center;
+  color: #EFEAE0;
+  padding-bottom: 50px;
+  padding-top: 20px;
+  font-family: 'Bebas',sans-serif;
+  font-style: italic; }
 
 .fondo-contacto {
   background-image: url(../img/fondo-contacto.jpg); }

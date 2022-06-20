@@ -33,13 +33,6 @@
         text-shadow: 2px 2px #d1d1d1;   
     }  
 }
-p {
-    padding: 2rem;
-    font-size: 3.5em;
-    text-align: center;
-    color: map-get($colors, base); 
-    padding-bottom: 10rem;
-}
 
 .img {
     display: flex;
@@ -69,10 +62,10 @@ p {
     &__text{
         margin: 10px;
         padding: 10px;
-        font-family: 'Bebas', sans-serif;
         color: map-get($colors, base );
         font-size: 2rem;
         letter-spacing: 1px;
+        text-align: justify;
     }
 
 }
