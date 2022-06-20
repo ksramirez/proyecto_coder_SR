@@ -3,7 +3,7 @@
 /*Misc*/
 /*Colors*/
 primary {
-  color: #808285; }
+  color: #717375; }
 
 secondary {
   color: #EFEAE0; }
@@ -32,10 +32,26 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   object-position: center;
-  width: 100%;
   font-family: 'Khula',sans-serif; }
 
-@media (max-width: 768px) {
+/*Mobile Small*/
+@media screen and (max-width: 480px) {
+  /*Home*/ }
+
+/*Mobile Large*/
+@media screen and (max-width: 480px) {
+  .img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem; }
+  .img .img__circulo {
+    width: 30%;
+    border-radius: 50%;
+    border: #808285 8px solid; } }
+
+/*Mobile Tablet*/
+@media (max-width: 760px) {
   header picture {
     display: none; }
   nav ul a {
@@ -62,7 +78,7 @@ body {
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 10px; }
-  .item .item__titulo, .item .text-center--active {
+  .item .item__titulo {
     font-size: 2.2em; }
   .contacto__titulo {
     font-size: 2.5em; }
@@ -71,17 +87,6 @@ body {
   form {
     width: 300px;
     border-radius: 7px; } }
-
-@media screen and (max-width: 480px) {
-  .img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem; }
-  .img .img__circulo {
-    width: 30%;
-    border-radius: 50%;
-    border: #808285 8px solid; } }
 
 /*Partials*/
 header {
@@ -106,7 +111,7 @@ nav ul li {
 
 nav ul a {
   display: flex;
-  font-size: 1.8em;
+  font-size: 1.4em;
   color: #f2f2f2;
   text-decoration: none;
   border-bottom: #EFEAE0 2px solid; }
@@ -133,7 +138,8 @@ nav ul li a:hover {
 
 /*Pages*/
 .fondo-index {
-  background-image: url(../img/fondoVela.jpg); }
+  background-image: url(../img/fondoVela.jpg);
+  background-attachment: fixed; }
 
 .presentacion {
   display: flex;
@@ -146,18 +152,18 @@ nav ul li a:hover {
   .presentacion__titulo {
     font-style: normal;
     font-size: 6em;
-    text-align: right;
+    text-align: center;
     padding-top: 3rem;
     padding-right: 20px;
     font-family: 'Khula', sans-serif;
     padding-bottom: 6rem; }
-
-#bio_info {
-  padding: 2rem;
-  font-size: 3.5em;
-  text-align: center;
-  color: #363535;
-  padding-bottom: 10rem; }
+  .presentacion__text {
+    padding: 2rem;
+    font-size: 3.5em;
+    text-align: center;
+    color: #363535;
+    padding-bottom: 10rem;
+    text-shadow: 2px 2px #d1d1d1; }
 
 p {
   padding: 2rem;
@@ -165,10 +171,6 @@ p {
   text-align: center;
   color: #ffff;
   padding-bottom: 10rem; }
-
-.text-center {
-  font-size: 4rem;
-  font-family: 'Bebas',sans-serif; }
 
 .img {
   display: flex;
@@ -181,64 +183,146 @@ p {
     border-radius: 50%;
     border: #808285 8px solid; }
 
-.fondo_aromas {
+.nosotros__img {
+  max-width: 400px; }
+
+.nosotros__title {
+  font-family: 'Bebas', sans-serif;
+  color: #717375;
+  text-shadow: 1px 1px #d1d1d1;
+  font-size: 4rem;
+  padding-bottom: 20px;
+  padding-top: 20px; }
+
+.nosotros__text {
+  margin: 10px;
+  padding: 10px;
+  font-family: 'Bebas', sans-serif;
+  color: #ffff;
+  font-size: 2rem;
+  letter-spacing: 1px; }
+
+.fondo-aromas {
   background-image: url(../img/fondo-conocenos.jpg); }
 
 .fondo-productos {
-  background-image: url(../img/fondo-conocenos.jpg); }
+  background-image: url(../img/fondo-conocenos.jpg);
+  background-attachment: fixed; }
 
-#cards {
-  margin-top: 2rem;
+.card {
+  box-shadow: 0 5px 10px #000;
+  border-radius: 5px; }
+  .card__body {
+    background-image: url(../img/fondo-conocenos.jpg); }
+  .card__flip > div {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    border-radius: 5px; }
+
+.card__flip:hover .card-front {
+  transform: rotateY(-180deg); }
+
+.card__flip:hover .card-back {
+  transform: rotateY(0deg); }
+
+.card-front {
+  transform: rotateY(0deg);
+  border-radius: 5px; }
+
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  border-radius: 5px; }
+
+.card-title {
+  text-shadow: 2px 2px #535252;
+  margin-top: 1em;
+  margin-bottom: 1em !important;
+  font-family: 'Bebas', sans-serif;
+  font-size: 2.8rem; }
+
+.card-text {
+  font-family: 'Monserrat', sans-serif;
+  font-size: 2.2rem;
+  color: #252525;
+  letter-spacing: 1px; }
+
+.btn {
+  box-shadow: 0 5px 10px #000; }
+
+.cardP {
+  width: 18rem;
+  height: 30rem; }
+
+/*Productos*/
+.productos {
+  margin-top: 80px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 2rem;
-  flex-wrap: nowrap; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
-.box {
-  align-items: center;
-  gap: 4rem;
-  transition: all .2s linear; }
-  .box__imagen {
-    display: flex;
-    margin: auto;
-    border: 4px #EFEAE0 solid;
-    width: 300px;
-    border-radius: 500%;
-    box-shadow: 4px 4px 5px gray; }
-  .box__boton {
-    display: flex;
-    justify-content: center;
+.cards {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 200px;
+  margin: 20px;
+  background-color: white;
+  text-align: center;
+  font-family: arial;
+  padding: 1px;
+  transition: transform .2s; }
+  .cards__img {
     width: 200px;
-    background: #808285;
-    color: #ffff;
-    font-size: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 4px 4px 4px white; }
+    border-radius: 10px; }
+  .cards__title {
+    margin: 10px;
+    font-family: 'Khula',sans-serif; }
+  .cards__text {
+    font-size: 10px;
+    color: #252525;
+    padding: 2px; }
 
-.box:hover {
-  transform: scale(1.1, 1.1); }
+.button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px; }
 
-.box__boton:hover {
-  cursor: pointer; }
+.cards:hover {
+  transform: scale(1.1); }
+
+button:hover {
+  opacity: 0.7; }
 
 .item {
   background-image: url(../img/fondo-porQueElegirnos.jpg); }
-  .item__titulo, .text-center--active {
+  .item__titulo {
     font-size: 40px;
     text-align: center;
     margin-top: 5px;
-    color: #b77222;
+    color: #717375;
     font-family: 'Bebas', sans-serif;
     text-shadow: 3px 3px 3px white; }
   .item__descripcion {
     font-size: 25px;
     text-align: center;
-    padding-left: 400px;
-    padding-right: 400px;
-    color: #ffffff;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #EFEAE0;
     padding-bottom: 50px;
     font-family: 'Bebas',sans-serif;
     font-style: italic; }
@@ -306,7 +390,7 @@ input {
 
 #buttonContacto {
   background: #F1BDA7;
-  color: #808285;
+  color: #717375;
   padding: 20px;
   font-size: 20px;
   border-radius: 20px;

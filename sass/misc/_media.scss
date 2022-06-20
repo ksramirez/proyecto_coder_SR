@@ -1,4 +1,31 @@
-@media (max-width:768px) {
+/*Mobile Small*/
+@media screen and (max-width: 480px){
+    /*Home*/
+    
+
+}
+
+
+/*Mobile Large*/
+@media screen and (max-width: 480px) {
+
+    .img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    
+    }
+    .img .img__circulo {
+        width: 30%;
+        border-radius: 50%;
+        border: #808285 8px solid;
+    }
+}
+
+
+/*Mobile Tablet*/
+@media (max-width:760px) {
     header picture {
         display: none;
     }
@@ -40,7 +67,7 @@
     .contacto__titulo {
         font-size: 2.5em;
    }
-   .contacto__p {
+    .contacto__p {
        font-size: 1.6em;
    }
    
@@ -50,18 +77,3 @@
    }
 }
     
-@media screen and (max-width: 480px) {
-
-    .img {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-    
-    }
-    .img .img__circulo {
-        width: 30%;
-        border-radius: 50%;
-        border: #808285 8px solid;
-    }
-}

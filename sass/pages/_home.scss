@@ -1,5 +1,6 @@
 .fondo-index {
     background-image: url(../img/fondoVela.jpg);
+    background-attachment: fixed;
 }
 
 .presentacion {
@@ -17,22 +18,21 @@
         font-style: normal;
         font-size: 6em;
         color: map-get($colors, primery);
-        text-align: right;    
+        text-align: center;    
         padding-top: 3rem;
         padding-right: 20px;
         font-family: 'Khula', sans-serif;
         padding-bottom: 6rem;
-    }    
+    }  
+        &__text{
+        padding: 2rem;
+        font-size: 3.5em;
+        text-align: center;
+        color: #363535; 
+        padding-bottom: 10rem; 
+        text-shadow: 2px 2px #d1d1d1;   
+    }  
 }
-
-#bio_info{
-    padding: 2rem;
-    font-size: 3.5em;
-    text-align: center;
-    color: #363535; 
-    padding-bottom: 10rem;    
-}
-
 p {
     padding: 2rem;
     font-size: 3.5em;
@@ -41,13 +41,6 @@ p {
     padding-bottom: 10rem;
 }
 
-.text-center{
-    font-size: 4rem;
-    font-family: 'Bebas',sans-serif;
-    &--active{
-        @extend .item__titulo
-    }
-}
 .img {
     display: flex;
     flex-direction: row;
@@ -60,3 +53,27 @@ p {
         border: #808285 8px solid;
     }
 }
+
+.nosotros{
+    &__img{
+        max-width: 400px;
+    }
+    &__title{
+        font-family: 'Bebas', sans-serif;
+        color: map-get($colors , primary );
+        text-shadow: 1px 1px #d1d1d1;
+        font-size: 4rem;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    &__text{
+        margin: 10px;
+        padding: 10px;
+        font-family: 'Bebas', sans-serif;
+        color: map-get($colors, base );
+        font-size: 2rem;
+        letter-spacing: 1px;
+    }
+
+}
+
