@@ -57,7 +57,8 @@ form {
 
  .buttonContacto {
     width: 40%;
-    background:map-get($colors, alternative) ;
+    background: rgb(238,215,174);
+    background: radial-gradient(circle, rgba(238,215,174,1) 0%, rgba(107,107,107,1) 100%);
     color:black;
     padding: 20px;
     font-size: 20px;

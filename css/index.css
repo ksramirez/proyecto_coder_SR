@@ -94,6 +94,8 @@ body {
     text-shadow: 2px 2px 5px white; }
   .tag .tag__img {
     height: 35rem; }
+  .card .card-text {
+    font-size: 1.8rem; }
   .f-menu {
     display: flex;
     flex-direction: column;
@@ -308,7 +310,7 @@ footer {
   padding-top: 20px; }
 
 .nosotros__text {
-  background-color: rgba(255, 228, 196, 0.401);
+  background-color: rgba(24, 24, 23, 0.508);
   border-radius: 5px;
   margin: 10px;
   padding: 10px;
@@ -511,7 +513,8 @@ input {
 
 .buttonContacto {
   width: 40%;
-  background: #F1BDA7;
+  background: #eed7ae;
+  background: radial-gradient(circle, #eed7ae 0%, #6b6b6b 100%);
   color: black;
   padding: 20px;
   font-size: 20px;
