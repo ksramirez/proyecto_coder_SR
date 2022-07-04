@@ -8,7 +8,8 @@
     <meta name="keywords" content="VELA, SOJA, AROMA, AROMATERAPIA, AROMATIZADOR, RELAX, HOMEDECO">
     <link rel="shortcut icon" href="../img/iconmaw.png" type="image/x-icon">
     <title>| Contacto |</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>                                                                                
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="../css/index.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
@@ -20,7 +21,7 @@
             <a href="index.html"> <img src="../img/logo-rectangulo.png" alt="logo rectangulo"></a>
         </picture>
                 
-       <nav class="navbar navbar-expand-md"> 
+       <nav class="navbar navbar-expand-sm"> 
            <section class="container-fluid justify-content-center">
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                    <span class="navbar-toggler-icon"></span>
@@ -52,25 +53,24 @@
 
     <main class="container">
 
-        <section class="contenedor">
-                           
+        <section class="contenedor">                                    
             <form action="./index.js" method="post">
 
                 <div class="contacto">
                     <h2 class="contacto__titulo">Contactate con nosotros</h2>
                     <p class="contacto__p">Envianos un mensaje y nos contactaremos a la brevedad</p>
                 </div>
-                <div class="d-grid gap-3">             
+                <div class="celdas ">             
        
-                    <input class="p-2 bg-light border" type="text" name="nombre" placeholder="Nombre y apellido" required>
+                    <input  type="text" name="nombre" placeholder="Nombre y apellido" required>
 
-                    <input class="p-2 bg-light border" type="text" name="telefono" placeholder="Telefono">
+                    <input type="text" name="telefono" placeholder="Telefono">
 
-                    <input class="p-2 bg-light border" type="email" name="email" placeholder="Email" required>
+                    <input type="email" name="email" placeholder="Email" required>
 
-                    <input class="p-2 bg-light border"  class="input-mensaje" type="text" name="mensaje" placeholder="Escriba aqui su mensaje." required>
+                    <input  class="input-mensaje" type="text" name="mensaje" placeholder="Escriba aqui su mensaje." required>
        
-                    <input type="button" value="Enviar" id="buttonContacto">
+                    <input type="button" value="Enviar" class="buttonContacto mx-auto">
                 </div>
                 </form>            
         </section>
@@ -79,15 +79,34 @@
 
 
     <!--FOOTER-->
-    <footer >
-        <section class="footer">                   
-            <a href="https://facebook.com"><img class="footer__iconos" src="../img/facebookLogo.webp" alt="facebook logo"></a>                
-            <a  href="https://instagram.com"><img class="footer__iconos" src="../img/instagramLogo.webp" alt="instagram logo"></a>                
-            <a  href="https://googlemaps.com"><img class="footer__iconos" src="../img/googleMaps.webp" alt="google maps logo"></a>                            
-        </section>
-   
-    </footer>
+    <footer>
+        <div class="footer-content">
+            <h3>Seguinos en redes</h3>
+            <p>Todas los productos y novedades también las encontrarás en nuestras Redes Sociales</p>
+            <ul class="socials ">
+                <li><a href="https://facebook.com"><img src="../img/facebook.png" alt="facebook"></a></li>
+                <li><a href="https://instagram.com"><img src="../img/instagram-logo.png" alt="instagram"></a></li>
+                <li><a href="https://www.google.com.ar/maps/place/Paran%C3%A1,+Entre+R%C3%ADos/@-31.7473137,-60.5499826,13z/data=!3m1!4b1!4m5!3m4!1s0x95b44df2b9835231:0x554ebde0aa5cfa9a!8m2!3d-31.7413197!4d-60.5115471"><img src="../img/maps-and-flags.png" alt="maps"></a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">           
+                    <div class="footer-menu">
+                      <ul class="f-menu">
+                        <li><a href="../index.html">HOME</a></li>
+                        <li><a href="../paginas/nuestrosaromas.html" >NUESTROS AROMAS</a></li>
+                        <li><a href="../paginas/nuestrosproductos.html" >NUESTROS PRODUCTOS</a></li>
+                        <li><a href="../paginas/porqueelegirnos.html" >POR QUÉ ELEGIRNOS</a></li>
+                        <li><a href="./paginas/contacto.html" >CONTACTO</a></li>
+                      </ul>
+                    </div>
+                    <p>copyright &copy;2022 <a href="#"><img src="../img/logoSun.png" class="SunLogo" alt="SunLogo"></a></p>
+        </div>
+      </footer>
     <!--FIN DE FOOTER DE LA PAGINA-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
 

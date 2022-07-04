@@ -2,39 +2,36 @@
     background-image: url(../img/fondo-porQueElegirnos.jpg);
 }
 
+.tag{    
+    &__img{
+        width: 100%;
+        background-size: cover;
+        filter: brightness(0.5);
+    }
+    &__icon{
+        width: 30%;     
+        margin-bottom: 2em; 
+    }   
+    &__title {
+        font-size: 4rem;
+        text-align: center;
+        margin-top: 5px;
+        color:black;
+        font-family: 'Bebas', sans-serif;
+        text-shadow: 2px 2px 5px white ;
+    }
 
-.tag{
-    &__imagen {
-       width: 70%;
-       display: block;
-       margin-left: auto;
-       margin-right: auto;
-       margin-top: 30px;
-       margin-bottom: 20px;
-       border-radius: 6px;
-       box-shadow: 4px 4px 6px white;
+    &__text {
+        padding-left:100px;
+        padding-right: 100px;       
+        font-size: 2.5rem;
+        text-align: center; 
+        color: map-get($colors,secondary );  
+        padding-bottom: 50px;
+        padding-top: 20px;
+        font-family:'Bebas',sans-serif ;
+        font-style: italic;
     }
 }
-    .descripcion{
-        &__titulo {
-            font-size: 40px;
-            text-align: center;
-            margin-top: 5px;
-            color:black;
-            font-family: 'Bebas', sans-serif;
-            text-shadow: 2px 2px 5px white ;
-        }
-    
-        &__text {
-            padding-left:200px;
-            padding-right: 200px;       
-            font-size: 25px;
-            text-align: center; 
-            color: map-get($colors,secondary );  
-            padding-bottom: 50px;
-            padding-top: 20px;
-            font-family:'Bebas',sans-serif ;
-            font-style: italic;
-        }
-    }
+
 

@@ -1,11 +1,6 @@
 /*Mobile Small*/
 @media screen and (max-width:320px){
-    //Home
-}
-
-/*Mobile Large*/
-@media screen and (max-width: 480px) {
-
+    //Home page
     .img {
         display: flex;
         flex-direction: column;
@@ -19,81 +14,145 @@
         border: #808285 8px solid;
     }
     //Por qué elgirnos
-    .descripcion .descripcion__text{
-        font-size: 14px;
-        padding-left: 50px;
-        padding-bottom: 50px;
+
+    .tag .tag__text {
+        padding:10px 0 10px 0; 
+        font-size: 1.2rem ;
+        }
+    .tag .tag__title {
+        font-size:1.8rem;
+        text-align: center;
+        margin-top: 5px;
+        color:black;
+        font-family: 'Bebas', sans-serif;
+        text-shadow: 2px 2px 5px white ;
+    }
+    .tag .tag__img{
+        
+        height: 45em;
     }
 }
 
 
-/*Mobile Tablet*/
-@media (max-width:768px) {
-    header picture {
-        display: none;
-    }
-    nav ul a {
-        font-size: 1.6em;
-        font-style: italic ;
-        color: rgb(252, 252, 252);
-        padding: .4rem;
-    }
-    .presentacion__titulo {
-        text-align: center;
-    }
 
-    .grid-main {
+/*Mobile Large*/
+@media only screen and (max-width: 480px) {
+    //Home page
+    .presentacion .presentacion__titulo{
+        font-size: 4rem;
+        padding-bottom: 4px;
+    }
+    .presentacion .presentacion__text{
+        font-size: 1.8rem;
+        padding-bottom: 5px;
+    }
+    .nosotros .nosotros__text{
+        font-size: 1.4rem;
+        letter-spacing: .8px;
+    }
+    .img {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 30px;
+        padding: 1rem;
+    
+    }
+    .img .img__circulo {
+        width: 30%;
+        border-radius: 50%;
+        border: #808285 8px solid;
+    }
+    //Por qué elgirnos
+    .tag {     
+        width: 100%; 
+        height: 35rem;
+        background-size: cover;
+    }
+    .tag .tag__text {
+        padding:10px 0 10px 0; 
+        font-size: 1.2rem !important;
+        }
+    .tag .tag__title {
+        font-size:1.2rem;
+        text-align: center;
+        margin-top: 5px;
+        color:black;
+        font-family: 'Bebas', sans-serif;
+        text-shadow: 2px 2px 5px white ;
+    }
+    .tag .tag__img{
+        height: 35rem;
+    }
+
+    
+    //Footer
+
+    .f-menu{
+        display: flex;
+        flex-direction: column; 
+        align-items: center;     
+    }
+    .footer-menu a{
+        font-size: .8rem;
+    }
+    .socials a img{     
+        width: 20px;
+    }
+
+
+
+}
+
+
+
+/*Mobile Tablet*/
+@media only screen and  (max-width:768px) {
+    //HEADER
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-item a {
+        font-size: 1.4rem;
+        font-style: italic ;
+    }
+    //Home page
+    .presentacion__titulo {
+        text-align: center;
     }
     .card {
         display: flex;
         flex-direction: column; 
         align-items: center;       
     }
-    .box__imagen {
-        width: 40%;
-    }
-    .item .item__descripcion {
-        font-size: 1.6em;
-        text-align: center;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-bottom: 10px;
-    }
-    .item .item__titulo {
-        font-size: 2.2em;
-    }
 
+//contacto page
     .contacto__titulo {
         font-size: 2.5em;
    }
     .contacto__p {
        font-size: 1.6em;
-   }
-   
-   form {
-       width: 300px;
-       border-radius: 7px;
-   }
-   .tag .tag__imagen {
-        width: 400px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 30px;
-        margin-bottom: 20px;
-        border-radius: 6px;
-        }
+   } 
 
-    .descripcion .descripcion__text{
-            font-size: 14px;
-            padding-left: 50px;
-            padding-right: 50px;
-            padding-bottom: 10px;
-            text-align: center; }
-       
+   //por qué elegirnos page
+      .tag .tag__text {
+    padding:0;
+    margin: 10px 0 10px 0 ;
+    font-size: 1.8rem;
+    }
+    .tag .tag__title {
+        font-size:2.2rem;
+    }
+    //Footer
+    .footer-content p{
+        display: none;
+    }
+    .footer-bottom{
+        display: flex;
+        flex-direction: column;          
+
+    } 
+     
 }
     

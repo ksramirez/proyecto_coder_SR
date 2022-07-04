@@ -1,31 +1,108 @@
-.footer {    
+
+footer{
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(107,107,107);
+    background: linear-gradient(0deg, rgba(107,107,107,1) 0%, rgba(210,192,158,1) 100%);
+    height: auto;
+    width: 100vw;
+    padding-top: 10px;
+    color: rgb(80, 80, 80);
+}
+.footer-content{
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    background-image: linear-gradient(
-        160deg,
-        #474747 0%,
-        #5c5c5c 11%,
-        #707070 24%,
-        #858585 37%,
-        #9c9c9c 51%,
-        #b0b0b0 63%,
-        #b8b8b8 73%,
-        #bfbfbf 82%,
-        #c7c7c7 89%,
-        #cfcfcf 95%,
-        #d6d6d6 100%
-      );
-    background-size: cover;width: 100%;
-    position: relative;
-    padding: 1rem;  
-    justify-content: space-evenly;  
-    
-    &__iconos{
-        height: 4rem;
-        background-position: center;
-        margin-left: 2rem;
-        padding-left:9rem;
+    flex-direction: column;
+    text-align: center;
+
+    h3{
+    font-size: 2.1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    }
+
+    p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 16px;
+    color: map-get($colors,primary );
     }
 }
 
+.socials{    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1rem 0 2rem 0;
+    list-style: none;
+
+    li{
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+
+
+    }    
+}
+.socials a img{     
+    width: 100%;   
+    height: 30px; 
+
+}
+.socials a img:hover{
+    box-shadow: 2px 2px 5px rgb(244, 253, 252);
+    transform: scale(1.1)
+
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background:map-get($colors , primary );
+    width: 100vw;
+    padding: 20px;
+
+    }
+.footer-bottom p{
+    flex-basis: 12%;
+    font-size: 14px;
+    color: map-get($colors, secondary );
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+.footer-menu{
+    display: flex;
+      li{
+    padding-right: 10px;
+    display: block;
+    }
+  a{
+    display: flex;
+    font-size: 1.4rem;
+    color: #cfd2d6;
+    text-decoration: none;
+    }
+}
+
+
+.footer-menu ul li a:hover{
+  color: #6c6c6c;
+}
+
+.f-menu{
+  display: flex;
+  
+  margin-right: 2rem;
+}
+
+.SunLogo{
+    max-height: 18px;
+}
